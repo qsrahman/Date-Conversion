@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		16D2416316CCF122003ADA76 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16D2416216CCF122003ADA76 /* main.cpp */; };
 		16D2416516CCF122003ADA76 /* Date_Classes.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16D2416416CCF122003ADA76 /* Date_Classes.1 */; };
+		16D2416F16CCF1C5003ADA76 /* GregorianDate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16D2416B16CCF1C5003ADA76 /* GregorianDate.cpp */; };
+		16D2417016CCF1C5003ADA76 /* HijriDate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16D2416D16CCF1C5003ADA76 /* HijriDate.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		16D2415E16CCF122003ADA76 /* Date Classes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Date Classes"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16D2416216CCF122003ADA76 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		16D2416416CCF122003ADA76 /* Date_Classes.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Date_Classes.1; sourceTree = "<group>"; };
+		16D2416B16CCF1C5003ADA76 /* GregorianDate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GregorianDate.cpp; sourceTree = "<group>"; };
+		16D2416C16CCF1C5003ADA76 /* GregorianDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GregorianDate.h; sourceTree = "<group>"; };
+		16D2416D16CCF1C5003ADA76 /* HijriDate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HijriDate.cpp; sourceTree = "<group>"; };
+		16D2416E16CCF1C5003ADA76 /* HijriDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HijriDate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,10 @@
 		16D2416116CCF122003ADA76 /* Date Classes */ = {
 			isa = PBXGroup;
 			children = (
+				16D2416B16CCF1C5003ADA76 /* GregorianDate.cpp */,
+				16D2416C16CCF1C5003ADA76 /* GregorianDate.h */,
+				16D2416D16CCF1C5003ADA76 /* HijriDate.cpp */,
+				16D2416E16CCF1C5003ADA76 /* HijriDate.h */,
 				16D2416216CCF122003ADA76 /* main.cpp */,
 				16D2416416CCF122003ADA76 /* Date_Classes.1 */,
 			);
@@ -118,6 +128,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				16D2416316CCF122003ADA76 /* main.cpp in Sources */,
+				16D2416F16CCF1C5003ADA76 /* GregorianDate.cpp in Sources */,
+				16D2417016CCF1C5003ADA76 /* HijriDate.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

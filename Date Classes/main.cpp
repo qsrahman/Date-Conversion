@@ -7,12 +7,25 @@
 //
 
 #include <iostream>
+#include <iomanip>
+#include "GregorianDate.h"
+#include "HijriDate.h"
 
-int main(int argc, const char * argv[])
+using namespace std;
+
+int main (int argc, char * const argv[])
 {
-
-    // insert code here...
-    std::cout << "Hello, World!\n";
+//  HijriDate hdate(1, 1, 1);
+    GregorianDate gdate(15, 10, 1962);
+    int jdn = gdate;
+    HijriDate hdate(jdn);
+    
+    cout << "islamic date: " << hdate << "\n";
+    cout << "gregorian date: " << gdate << "\n";
+    cout << "absolute date: " << jdn << "\n";
+    gdate.calendar();
+    
+//  cout << "Julian day number for " << gdate << " " << jdn << endl;
+    
     return 0;
 }
-
