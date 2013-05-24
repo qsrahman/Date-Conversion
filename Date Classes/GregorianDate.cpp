@@ -119,15 +119,21 @@ void GregorianDate::calendar(int m, int y)
     int dow = GregorianDate(1, m, y) % 7;
     int ldm = lastDayOfMonth(m, y);
     
-    int d = 1;
-    for (int c = dow; c < 7; c++) {
-        cal[0][c] = d++;
-    }
-    for (int r = 1; r < 6; r++) {
-        for (int c = 0; c < 7 && d <= ldm; c++) {
-            cal[r][c] = d++;
-        }
-    }
+    // int d = 1;
+    // for (int c = dow; c < 7; c++) {
+    //     cal[0][c] = d++;
+    // }
+    // for (int r = 1; r < 6; r++) {
+    //     for (int c = 0; c < 7 && d <= ldm; c++) {
+    //         cal[r][c] = d++;
+    //     }
+    // }
+
+    for (int d = 0; d < ldm; d++) {
+		int r = (d + dow) / 7;
+		int c = (d + dow) % 7;
+		cal[r][c] = d + 1;
+	}
     
     std::cout << "\n\tSun\tMon\tThu\tWed\tThr\tFri\tSat" << std::endl;
     for (int r = 0; r < 6; r++) {
